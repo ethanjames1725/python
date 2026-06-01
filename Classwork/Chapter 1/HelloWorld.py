@@ -1,6 +1,0 @@
-print("Hello Python World!")
-print("Writing my first print message")
-print("This is my first Python program")
-print("I am learning Python programming")
-print("Python is a great programming language")
-print("I am excited to learn more about Python")
