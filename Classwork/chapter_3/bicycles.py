@@ -1,0 +1,7 @@
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles)
+print(f"The first bicycle I owned was a {bicycles[0].title()}.")
+print(f"The second bicycle I owned was a {bicycles[1].title()}.")
+print(f"The third bicycle I owned was a {bicycles[2].title()}.")
+print(f"The fourth bicycle I owned was a {bicycles[3].title()}.")
+print(f"The last bicycle I owned was a {bicycles[-1].title()}.")
