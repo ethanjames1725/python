@@ -1,4 +1,4 @@
-name = "\t\nJohn Doe\n\t"
+name = " \n\tJohn Doe\n\t "
 print(name)
 print(name.lstrip())
 print(name.rstrip())
