@@ -1,0 +1,12 @@
+locations = ['Paris', 'New York', 'Tokyo', 'Sydney', 'Cairo']
+print(f"Original list of locations: {locations}")
+print(f"\nSorted list of locations: {sorted(locations)}")
+print(f"\nOriginal list of locations after sorted(): {locations}")
+locations.reverse()
+print(f"\nList of locations after reverse(): {locations}")
+locations.reverse()
+print(f"\nList of locations after reversing again: {locations}")
+locations.sort()
+print(f"\nList of locations after sort(): {locations}")
+locations.sort(reverse=True)
+print(f"\nList of locations after sort(reverse=True): {locations}")
