@@ -1,4 +1,10 @@
+# Detailed Summary: This code snippet demonstrates the use of various built-in functions in Python to manipulate a list of countries. 
+# It shows how to find the number of items in the list using `len()`, sort the list in both alphabetical and 
+# reverse alphabetical order using `sorted()` and `reverse()`, remove items from the list using `pop()` and `remove()`, 
+# and add new items using `insert()` and `append()`. The code also uses the `del` statement to remove an item by index. 
+# Each operation is followed by a print statement to display the results.
 # This program demonstrates the use of the built-in functions in Python that have been covered in this chapter.
+
 countries = ["South Africa", "Australia", "Canada", "Brazil", "Argentina", "Zimbabwe", "Mauritius"]
 
 # Using the len() function to find the number of countries in the list
