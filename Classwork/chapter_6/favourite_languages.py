@@ -2,8 +2,8 @@ favourite_languages = {
     'jen': 'python',
     'sarah': 'c',
     'edward': 'rust',
-    'phil': 'python'
-    }
+    'phil': 'python',
+}
 # language = favourite_languages['sarah'].title()
 # print(f"Sarah's favourite langauge is {language}")
 
@@ -31,3 +31,19 @@ for lang in set(favourite_languages.values()):
 #building a set directly using braces and seperating the elements with commas:
 #lang = {'python', 'rust', 'python', 'c'}
 #print(lang) >>> {'rust', 'python', 'c'}
+
+#Using list in a Dictionary:
+
+print("\nUsing List in Dictionary:\n")
+
+favourite_languages = {
+    'jen': ['python', 'rust'],
+    'sarah': ['c'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favourite_languages.items():
+    print(f"\n{name.title()}'s favourite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
