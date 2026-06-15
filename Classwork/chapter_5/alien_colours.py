@@ -7,21 +7,21 @@ alien_colour = 'red'
 if alien_colour == 'green':
     print("You just earned 5 points!")
 
-#Else if chain:
+# Else if chain:
 print("\nAlien 2:")
 alien_colour = 'yellow'
 if alien_colour == 'green':
     print("You just earned 5 points!")
 else:
     print("You just earned 10 points!")
-    
+
 alien_colour = 'green'
 if alien_colour == 'green':
     print("You just earned 5 points!")
 else:
     print("You just earned 10 points!")
-    
-#Alien 3
+
+# Alien 3
 print("\nAlien 3:")
 
 alien_colour = 'green'

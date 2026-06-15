@@ -1,4 +1,4 @@
-#Numerical Comparisons
+# Numerical Comparisons
 age = 18
 print("age = 18")
 print(f"age == 18: {age == 18}\n")
@@ -14,7 +14,7 @@ print(f"age <= 21: {age <= 21}")
 print(f"age > 21: {age > 21}")
 print(f"age >= 21: {age >= 21}")
 
-#Using AND
+# Using AND
 age_0 = 22
 age_1 = 18
 print("\nage_0 = 22\nage_1 = 18\n")
@@ -23,7 +23,7 @@ print("\nage_0 = 22\nage_1 = 22\n")
 age_1 = 22
 print(f"age_0 >= 21 and age_1 >= 21: {age_0 >= 21 or age_1 >= 21}")
 
-#Using OR
+# Using OR
 age_1 = 18
 print("\nUsing OR")
 print("\nage_0 = 22\nage_1 = 18\n")

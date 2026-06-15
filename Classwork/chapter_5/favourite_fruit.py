@@ -1,4 +1,5 @@
 favourite_fruits = ['apples', 'mangos', 'avocados']
+
 if 'mangos' in favourite_fruits:
     print("You really like mangos!")
 if 'bananas' in favourite_fruits:

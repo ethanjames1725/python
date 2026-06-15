@@ -1,13 +1,16 @@
+"""Exercises for checking pizza toppings using conditionals and lists."""
 requested_topping = 'mushrooms'
 
 if requested_topping != 'anchovies':
     print("Hold the anchovies!")
 
-#Checking whether a value is in a list:
+# Checking whether a value is in a list:
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
 print(f"\nRequested Toppings:{requested_toppings}\n")
-print(f"'mushrooms' in requested_toppings: {'mushrooms' in requested_toppings}")
-print(f"'pepperoni' in requested_toppings: {'pepperoni' in requested_toppings}")
+print("'mushrooms' in requested_toppings: "
+      f"{'mushrooms' in requested_toppings}")
+print("'pepperoni' in requested_toppings: "
+      f"{'pepperoni' in requested_toppings}")
 
 print("\nMultiple if statement:\n")
 
@@ -28,10 +31,11 @@ if requested_toppings:
     print("\nFinished making your pizza!")
 else:
     print("Are you sure you want a plain pizza?")
-    
+
 print("\nUsing multiple lists:\n")
 
-available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+                      'pepperoni', 'pineapple', 'extra cheese']
 requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
 for requested_topping in requested_toppings:
     if requested_topping in available_toppings:

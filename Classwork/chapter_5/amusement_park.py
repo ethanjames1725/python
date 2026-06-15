@@ -1,5 +1,6 @@
+"""Amusement park."""
+age = 12
 
-age = 12 
 if age < 4:
     print("Your admission cost is R0.")
 elif age < 18:
@@ -9,7 +10,9 @@ else:
 
 print()
 
-age = 12 
+age = 12
+price = 0
+
 if age < 4:
     price = 0
 elif age < 18:
@@ -18,4 +21,5 @@ elif age < 65:
     price = 40
 elif age >= 65:
     price = 20
+
 print(f"Your admission cost is R{price}.")
