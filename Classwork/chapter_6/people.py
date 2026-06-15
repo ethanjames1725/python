@@ -23,4 +23,5 @@ people = [person_0, person_1, person_2]
 
 for person in people:
     name = f"{person['first name']} {person['last name']}"
-    print(f"Name: {name.title()}\nAge: {person['age']}\nCity: {person['city'].title()}\n")
+    print(f"Name: {name.title()}\nAge: {person['age']}\nCity: "
+          "{person['city'].title()}\n")

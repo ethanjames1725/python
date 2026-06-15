@@ -5,7 +5,7 @@ favourite_places = {
 }
 
 for name, places in favourite_places.items():
-    print(f"Name: {name.title()}\nFavourite Places: ")
+    print(f"Name: {name.title()}\n\tFavourite Places: ")
     for place in places:
-        print(f"\t{place.title()}")
+        print(f"\t\t{place.title()}")
     print()

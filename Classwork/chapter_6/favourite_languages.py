@@ -4,6 +4,7 @@ favourite_languages = {
     'edward': 'rust',
     'phil': 'python',
 }
+
 # language = favourite_languages['sarah'].title()
 # print(f"Sarah's favourite langauge is {language}")
 
@@ -19,20 +20,22 @@ for name in favourite_languages.keys():
         print(f"\t{name.title()}, I see you love {lang}!")
 
 if 'erin' not in favourite_languages.keys():
-            print("\nErin, please take our poll!")
+    print("\nErin, please take our poll!")
 print()
 for name in sorted(favourite_languages.keys()):
     print(f"{name.title()}, thank you for taking the poll!")
 
-#Using set() to build a set from unique items in the collection.   
+# Using set() to build a set from unique items in the collection.
+
 print("\nThe following languages have been mentioned:")
 for lang in set(favourite_languages.values()):
     print(lang.title())
-#building a set directly using braces and seperating the elements with commas:
-#lang = {'python', 'rust', 'python', 'c'}
-#print(lang) >>> {'rust', 'python', 'c'}
 
-#Using list in a Dictionary:
+# building a set directly using braces and seperating the elements with commas:
+# lang = {'python', 'rust', 'python', 'c'}
+# print(lang) >>> {'rust', 'python', 'c'}
+
+# Using list in a Dictionary:
 
 print("\nUsing List in Dictionary:\n")
 

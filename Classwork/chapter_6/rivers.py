@@ -3,6 +3,7 @@ rivers = {
     'amazon': 'brazil',
     'orange': 'south africa',
 }
+
 print("Sentence:")
 for key, val in rivers.items():
     print(f"The {key.title()} runs through {val.title()}.")
