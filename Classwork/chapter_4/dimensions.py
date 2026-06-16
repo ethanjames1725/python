@@ -1,8 +1,10 @@
+"""summary"""
 dimensions = (200, 50)
-# dimensions[0] = 250 #TypeError: 'tuple' object does not support item assignment
+# dimensions[0] = 250 #TypeError: 'tuple' object does not support item
+# assignment
 print(dimensions[0])
 print(dimensions[1])
-#Looping through tuples:
+# Looping through tuples:
 print("\nOriginal dimensions:")
 for dimension in dimensions:
     print(dimension)

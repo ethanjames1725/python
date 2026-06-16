@@ -1,3 +1,4 @@
+"""buffet"""
 foods = ("pasta", "steak", "chicken", "fish", "seafood")
 # foods[0] = "pizza" #intentional type error
 print("Original menu:")

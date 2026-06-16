@@ -1,3 +1,4 @@
+"""summary"""
 pizzas = ["margherita", "nutella", "meat-lovers", "veggie", "bbq chicken"]
 friends_pizza = pizzas[:]
 pizzas.append("hawaiian")
