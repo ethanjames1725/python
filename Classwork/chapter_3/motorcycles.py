@@ -1,7 +1,10 @@
-# Summary: This code demonstrates how to create and manipulate a list of motorcycles. 
-# It shows how to add items to the list using the append() and insert() methods, 
-# how to remove items using the del statement and the pop() method, and how to remove an item by value using the remove() method. 
-# The code also includes print statements to display the contents of the list at various stages of manipulation.
+"""Summary: This code demonstrates how to create and manipulate a list of
+motorcycles. It shows how to add items to the list using the append() and
+insert() methods, how to remove items using the del statement and the pop()
+method, and how to remove an item by value using the remove() method.
+The code also includes print statements to display the contents of the list at
+various stages of manipulation."""
+
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 
