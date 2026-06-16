@@ -1,3 +1,4 @@
+"""summary"""
 favourite_fruits = ['apples', 'mangos', 'avocados']
 
 if 'mangos' in favourite_fruits:

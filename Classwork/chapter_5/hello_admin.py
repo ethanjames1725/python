@@ -1,3 +1,4 @@
+"""summary"""
 usernames = ['admin', 'ethan', 'george', 'james', 'smith']
 if usernames:
     for username in usernames:

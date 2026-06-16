@@ -1,3 +1,4 @@
+"""summary"""
 banned_users = ['andrew', 'carolina', 'david']
 user = 'marie'
 

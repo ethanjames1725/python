@@ -1,3 +1,4 @@
+"""summary"""
 current_users = ['ethan', 'james', 'smith', 'Abby', 'corio']
 current_users_lower = [user.lower() for user in current_users]
 new_users = ['Ethan', 'michael', 'albert', 'jack', 'abby']
