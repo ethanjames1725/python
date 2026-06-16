@@ -1,3 +1,4 @@
+"""hello world variables"""
 message = "Message from a variable"
 print(message)
 
