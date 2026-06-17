@@ -1,3 +1,4 @@
+"""Summary"""
 num_people = int(input("How many people are in your dinner group? "))
 
 if num_people > 8:

@@ -1,3 +1,4 @@
+"""Summary"""
 height = int(input("How tall are you, in centimetres? "))
 
 if height >= 120:

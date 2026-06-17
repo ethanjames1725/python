@@ -1,3 +1,4 @@
+"""Summary"""
 num = int(input("Please enter a number to check if it is a multiple of 10: "))
 
 if num % 10 == 0:

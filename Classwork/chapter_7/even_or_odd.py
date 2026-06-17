@@ -1,3 +1,4 @@
+"""summary"""
 number = int(input("Enter a number, and I will "
                    "tell you if it's even or odd: "))
 

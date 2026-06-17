@@ -8,4 +8,4 @@ people_fav_num = {
 
 for person, nums in people_fav_num.items():
     print(f"{person.title()}'s favourite numbers are: "
-          "{' and '.join(map(str, nums))}\n")
+          f"{' and '.join(map(str, nums))}\n")
