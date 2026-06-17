@@ -1,8 +1,10 @@
 """summary"""
-sandwich_orders = ['ham', 'pastrami', 'tuna', 'egg mayo', 'pastrami', 'tomato', 'nutella', 'pastrami']
+sandwich_orders = ['ham', 'pastrami', 'tuna', 'egg mayo', 'pastrami', 'tomato',
+                   'nutella', 'pastrami']
 finished_sandwiches = []
 
-print("We regret to inform you that we have, sadly, run out of fresh pastrami.\n")
+print("We regret to inform you that we have, "
+      "sadly, run out of fresh pastrami.\n")
 
 while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')
