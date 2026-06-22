@@ -1,4 +1,6 @@
-"""Amusement park."""
+"""Calculates amusement park admission cost based on age, first with
+a printed if/elif/else chain, then by assigning the cost to a
+price variable using elif ranges that include a senior discount."""
 age = 12
 
 if age < 4:

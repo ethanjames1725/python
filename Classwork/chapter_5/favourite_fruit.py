@@ -1,4 +1,5 @@
-"""summary"""
+"""Checks a list of favourite fruits against several fruit names and
+prints a message for each one found in the list."""
 favourite_fruits = ['apples', 'mangos', 'avocados']
 
 if 'mangos' in favourite_fruits:

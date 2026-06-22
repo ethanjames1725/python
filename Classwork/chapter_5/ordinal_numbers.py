@@ -1,4 +1,5 @@
-"""summary"""
+"""Loops through numbers 1-9 and prints each with its correct
+ordinal suffix (st, nd, rd, or th)."""
 numbers = list(range(1, 10))
 for num in numbers:
     if num == 1:

@@ -1,4 +1,6 @@
-"""summary"""
+"""Loops through a list of usernames, greeting 'admin' differently
+from other users, and demonstrates the if/else fallback message
+that prints when the list of usernames is empty."""
 usernames = ['admin', 'ethan', 'george', 'james', 'smith']
 if usernames:
     for username in usernames:

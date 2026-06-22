@@ -1,3 +1,5 @@
+"""Checks voting eligibility based on age, first with a simple if
+statement and then with an if/else for an underage voter."""
 age = 19
 if age >= 18:
     print("You are old enough to vote!")

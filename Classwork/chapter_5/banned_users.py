@@ -1,4 +1,5 @@
-"""summary"""
+"""Checks whether a user is in a list of banned users and prints a
+message allowing them to post if they are not banned."""
 banned_users = ['andrew', 'carolina', 'david']
 user = 'marie'
 

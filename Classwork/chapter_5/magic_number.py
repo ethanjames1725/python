@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrates numerical comparison operators, then combines
+conditions with 'and' and 'or' across pairs of age variables."""
 # Numerical Comparisons
 age = 18
 print("age = 18")

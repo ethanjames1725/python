@@ -1,4 +1,6 @@
-"""summary"""
+"""Loops through a list of cars printing each in title case (BMW in
+uppercase), then demonstrates case-insensitive string comparison
+using lower()."""
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 
 for car in cars:

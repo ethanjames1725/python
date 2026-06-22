@@ -1,4 +1,6 @@
-"""summary"""
+"""Tests equality and numerical comparison operators across several
+variables, then combines conditions on pairs of ages using 'and'
+and 'or'."""
 car = 'subaru'
 print("Is car == 'subaru'? I predict True.")
 print(car == 'subaru')

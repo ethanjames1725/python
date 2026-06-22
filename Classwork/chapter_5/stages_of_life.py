@@ -1,4 +1,6 @@
-"""summary"""
+"""Uses an if/elif/else chain to classify a person's stage of life
+(baby, toddler, kid, teenager, adult, or elder) based on their
+age."""
 age = 200
 
 if age < 2 and age >= 0:

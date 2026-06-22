@@ -1,3 +1,6 @@
+"""Three alien-shooting exercises that award points based on alien
+colour, demonstrating a plain if, an if/else, and an if/elif/else
+chain."""
 print("Alien 1:")
 alien_colour = 'green'
 if alien_colour == 'green':
