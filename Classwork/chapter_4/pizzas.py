@@ -1,4 +1,5 @@
-"""summary"""
+"""Copies a list of favourite pizzas, appends a different pizza to
+each list, then prints both lists."""
 pizzas = ["margherita", "nutella", "meat-lovers", "veggie", "bbq chicken"]
 friends_pizza = pizzas[:]
 pizzas.append("hawaiian")

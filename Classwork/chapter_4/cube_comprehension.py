@@ -1,3 +1,3 @@
-"""summary"""
+"""Builds a list of cubes (1-10) using a list comprehension."""
 cubes = [value ** 3 for value in range(1, 11)]
 print(cubes)

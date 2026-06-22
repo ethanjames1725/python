@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrates list slicing on a list of players, then loops
+through a slice to print the first three players' names."""
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3])
 print(players[1:4])

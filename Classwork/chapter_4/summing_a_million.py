@@ -1,4 +1,5 @@
-"""summary"""
+"""Builds a list of the first one million integers and prints its
+minimum, maximum, and sum."""
 million = [value for value in range(1, 1000001)]
 min_mil = min(million)
 max_mil = max(million)

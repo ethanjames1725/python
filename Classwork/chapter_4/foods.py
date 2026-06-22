@@ -1,4 +1,5 @@
-"""summary"""
+"""Copies a list of favourite foods into a new list, appends a
+different item to each, then prints both lists."""
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 

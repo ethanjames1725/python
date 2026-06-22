@@ -1,4 +1,6 @@
-"""summary:"""
+"""Loops through a list of feline animals printing a caution message,
+then demonstrates list slicing: first three, middle three, and last
+three items."""
 animals = ["cheetah", "lion", "tiger", "leopard", "jaguar"]
 for animal in animals:
     print(f"A {animal.title()} would probably not make a great pet.")
