@@ -1,3 +1,5 @@
+"""Stores several pets as dictionaries in a list and loops through each
+to print all of its key-value pairs."""
 pet_0 = {
     'pet name': 'chloe',
     'animal': 'cat',

@@ -1,3 +1,6 @@
+"""Polls favourite programming languages: greets friends, reminds
+non-respondents, lists unique languages via a set, then reworks the poll to
+allow multiple languages per person using lists as values."""
 favourite_languages = {
     'jen': 'python',
     'sarah': 'c',

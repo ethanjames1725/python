@@ -1,3 +1,5 @@
+"""Stores a pizza order's crust and toppings in a dictionary and
+prints a summary of the order."""
 # Store information about a pizza being ordered.
 pizza = {
     'crust': 'thick',

@@ -1,3 +1,5 @@
+"""Stores one user's details in a dictionary and loops over its items
+to print each key and value."""
 user_0 = {
     'username': 'efermi',
     'first': 'enrico',

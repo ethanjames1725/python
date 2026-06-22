@@ -1,3 +1,5 @@
+"""Stores one person's details in a dictionary and prints each
+value individually."""
 person = {
     'first name': 'ethan',
     'last name': 'smith',

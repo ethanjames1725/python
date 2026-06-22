@@ -1,3 +1,5 @@
+"""Checks a list of people against a favourite-languages dictionary and
+prints a thank-you or a reminder to take the poll."""
 favourite_languages = {
     'jen': 'python',
     'sarah': 'c',

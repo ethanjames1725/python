@@ -1,3 +1,5 @@
+"""Stores multiple users keyed by username, each with a nested dictionary
+of details, and prints a formatted profile for each."""
 users = {
     'aenstein': {
         'first': 'albert',

@@ -1,3 +1,5 @@
+"""Maps rivers to the countries they run through and prints sentences,
+then just the keys, then just the values."""
 rivers = {
     'nile': 'egypt',
     'amazon': 'brazil',

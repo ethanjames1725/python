@@ -1,3 +1,5 @@
+"""Nested dictionary of cities, each holding country, population and fun-fact
+data, looped over to print a formatted profile per city."""
 cities = {
     'johannesburg': {
         'country': 'south africa',

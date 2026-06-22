@@ -1,3 +1,5 @@
+"""Maps each person to a list of their favourite numbers and prints
+them joined into a readable sentence."""
 people_fav_num = {
     'jackson': [42, 21],
     'james': [12, 873],

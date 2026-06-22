@@ -1,3 +1,5 @@
+"""Demonstrates basic dictionary operations: accessing, adding, modifying and
+deleting key-value pairs, plus using .get() to avoid a KeyError."""
 alien_0 = {'colour': 'green', 'points': 5}
 
 print(alien_0['colour'])

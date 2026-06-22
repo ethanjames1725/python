@@ -1,3 +1,4 @@
+"""Maps each person to a list of their favourite places and prints them out."""
 favourite_places = {
     'adam': ['croatia', 'bali', 'maldives'],
     'ana': ['greece', 'paris', 'cyprus'],

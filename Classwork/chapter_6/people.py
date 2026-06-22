@@ -1,3 +1,5 @@
+"""Stores several people as dictionaries in a list and loops through
+each to print their name, age and city."""
 person_0 = {
     'first name': 'john',
     'last name': 'smith',

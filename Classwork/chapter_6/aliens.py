@@ -1,3 +1,5 @@
+"""Stores aliens as dictionaries in a list, generates a fleet with a loop,
+upgrades a subset of them, and prints a sample plus the total count."""
 alien_0 = {'color': 'green', 'points': 5}
 alien_1 = {'color': 'yellow', 'points': 10}
 alien_2 = {'color': 'red', 'points': 15}

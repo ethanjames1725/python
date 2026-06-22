@@ -1,3 +1,5 @@
+"""Stores a glossary of Python terms and definitions and loops over
+it to print each term formatted."""
 glossary = {
     'tuple': 'an unchangable list',
     'dictionary': 'a collection of key-value pairs',

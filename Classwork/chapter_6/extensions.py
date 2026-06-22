@@ -1,3 +1,5 @@
+"""Extension of the favourite_places exercise: each person maps to a nested
+dictionary of places with population, top attraction and a fun fact."""
 favourite_places = {
     'adam': {
         'maldives': {
