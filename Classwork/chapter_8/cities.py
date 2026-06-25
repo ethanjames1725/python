@@ -1,7 +1,8 @@
 """Summary"""
 
 
-def describe_city(city_name, city_country='south africa'):
+def describe_city(
+        city_name, city_country='south africa'):
     """Display info about a city."""
     print(f"\n{city_name.title()} is in {city_country.title()}.")
 

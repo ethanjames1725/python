@@ -1,12 +1,30 @@
 """Summary"""
+import cars_functions
 
-
-def make_car(manufacturer, car_name, **car_info):
-    """Stores information about a car in a dictionary."""
-    car_info['manufacturer'] = manufacturer
-    car_info['car_name'] = car_name
-    return car_info
-
-
-car = make_car('subaru', 'outback', color='blue', tow_package=True)
+car = cars_functions.make_car('subaru', 'outback',
+                              color='blue', tow_package=True)
 print(car)
+
+
+# import cars_functions as cf
+
+# car = cf.make_car('subaru', 'outback', color='blue', tow_package=True)
+# print(car)
+
+
+# from cars_functions import make_car
+
+# car = make_car('subaru', 'outback', color='blue', tow_package=True)
+# print(car)
+
+
+# from cars_functions import make_car as mc
+
+# car = mc('subaru', 'outback', color='blue', tow_package=True)
+# print(car)
+
+
+# from cars_functions import *
+
+# car = make_car('subaru', 'outback', color='blue', tow_package=True)
+# print(car)

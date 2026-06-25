@@ -8,8 +8,6 @@ def build_profile(first, last, **user_info):
     return user_info
 
 
-my_profile = build_profile('ethan', 'smith',
-                             location='johannesburg',
-                             field='information technology',
-                             age=21)
+my_profile = build_profile('ethan', 'smith', location='johannesburg',
+                           field='information technology', age=21)
 print(my_profile)
