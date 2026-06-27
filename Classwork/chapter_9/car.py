@@ -1,4 +1,4 @@
-"""Summary"""
+"""A class that can be used to represent gas and electric cars."""
 
 
 class Car:
@@ -35,11 +35,11 @@ class Car:
         self.odometer_reading += miles
 
 
-my_used_car = Car('audi', 'a4', 2024)
-print(my_used_car.get_descriptive_name())
+# my_used_car = Car('audi', 'a4', 2024)
+# print(my_used_car.get_descriptive_name())
 
-my_used_car.update_odometer(23_500)
-my_used_car.read_odometer()
+# my_used_car.update_odometer(23_500)
+# my_used_car.read_odometer()
 
-my_used_car.increment_odometer(100)
-my_used_car.read_odometer()
+# my_used_car.increment_odometer(100)
+# my_used_car.read_odometer()
