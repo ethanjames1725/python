@@ -1,0 +1,10 @@
+In Python you can run a simple program with the print() function to display text on the screen.
+In Python you can store information in variables and use strings, integers, and floats as simple data types.
+In Python you can use a list to store a collection of items in a particular order.
+In Python you can loop through a list with a for loop and modify it with slicing and list comprehensions.
+In Python you can use if statements to test conditions and run different code depending on whether they're true or false.
+In Python you can use a dictionary to connect pieces of related information together as key-value pairs.
+In Python you can use a while loop to keep a program running until a certain condition changes, often based on user input.
+In Python you can write a function to package up code so you can reuse it without repeating yourself.
+In Python you can define a class to model real-world objects with their own attributes and behaviors.
+In Python you can use try-except blocks and the with statement to handle errors and work with files safely.
