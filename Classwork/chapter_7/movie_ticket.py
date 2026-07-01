@@ -1,4 +1,8 @@
-"""summary"""
+"""
+Uses a while loop to prompt the user for their age and determine the cost
+of a movie ticket based on their age. The loop continues until a valid age is
+entered, and the final ticket price is printed.
+"""
 price = 15
 
 while True:

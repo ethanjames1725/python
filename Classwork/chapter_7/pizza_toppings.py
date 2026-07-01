@@ -1,4 +1,9 @@
-"""summary"""
+"""
+Prompts the user to enter pizza toppings until they enter 'quit'.
+It collects the toppings in a list and prints a message indicating the
+toppings that will be added to the pizza. Finally, it displays the final
+pizza order with the selected toppings.
+"""
 toppings = []
 prompt = "Please enter the pizza toppings you wish to add.\n"
 prompt += "When you are finished, please enter 'quit' to finalise your order. "

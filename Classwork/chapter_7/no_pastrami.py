@@ -1,4 +1,9 @@
-"""summary"""
+"""
+Creates a list of sandwich orders, removes all instances of 'pastrami' from
+the list, and processes the remaining orders. It prints messages indicating
+the completion of each sandwich order and displays the final list of completed
+sandwiches.
+"""
 sandwich_orders = ['ham', 'pastrami', 'tuna', 'egg mayo', 'pastrami', 'tomato',
                    'nutella', 'pastrami']
 finished_sandwiches = []

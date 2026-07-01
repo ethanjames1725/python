@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Prompts the user for their name and age, and prints a greeting message.
+"""
 name = input("Please enter your name: ")
 print(f"\nHello, {name.title()}")
 

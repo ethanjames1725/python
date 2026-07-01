@@ -1,4 +1,7 @@
-"""summary"""
+"""
+Creates a list of sandwich orders and processes them one by one, printing
+a message for each completed order and storing them in a finished list.
+"""
 sandwich_orders = ['ham', 'tuna', 'egg mayo', 'tomato', 'nutella']
 finished_sandwiches = []
 

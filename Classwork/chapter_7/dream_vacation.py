@@ -1,4 +1,11 @@
-"""summary"""
+"""
+Creates a dictionary of dream vacations based on user input and displays
+the results. It prompts the user for their name and dream vacation
+destination, and stores the responses in a dictionary. The user can continue
+to add more responses until they choose to stop. Finally, the program prints
+the results of the poll, showing each person's name and their dream vacation
+destination.
+"""
 dreams = {}
 
 while True:

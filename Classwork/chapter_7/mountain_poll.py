@@ -1,4 +1,8 @@
-"""Summary"""
+"""
+Creates a simple polling program that asks users which mountain they
+would like to climb someday. It stores the responses in a dictionary and
+prints the results after polling is complete.
+"""
 responses = {}
 # Set a flag to indicate that polling is active
 polling_active = True

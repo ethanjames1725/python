@@ -1,4 +1,9 @@
-"""summary"""
+"""
+Prompts the user for their age to determine the cost of a movie ticket.
+It calculates the ticket price based on the age entered and prints the final
+cost. The program continues to prompt for age until the user enters 'quit'
+to exit the program.
+"""
 prompt = "Please enter your age to receive a movie ticket.\n"
 prompt += "To exit, please enter 'quit'. "
 active = True

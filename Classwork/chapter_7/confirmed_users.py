@@ -1,4 +1,9 @@
-"""summary"""
+"""
+Creates a list of unconfirmed users, and an empty list for confirmed users.
+The program verifies each user, moving them from the unconfirmed list to the
+confirmed list, and then displays the confirmed users.
+"""
+
 # Start with users that need to be verified,
 # and an empty list to hold confirmed users.
 unconfirmed_users = ['alice', 'brian', 'candace']
