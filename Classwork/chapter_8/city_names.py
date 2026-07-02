@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrate a function with two required parameters by combining
+a city and country into a single formatted 'City, Country' string."""
 
 
 def city_country(c_name, c_country):

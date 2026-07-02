@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrate looping over a list argument by printing each text
+message in a list of messages."""
 
 
 def show_messages(text_messages):

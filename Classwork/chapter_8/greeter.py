@@ -1,4 +1,6 @@
-"""summary"""
+"""Repeatedly prompt the user for a first and last name, format the
+full name with get_formatted_name(), and print a greeting. The loop
+exits when 'q' is entered for either name."""
 
 
 def get_formatted_name(first_name, last_name):

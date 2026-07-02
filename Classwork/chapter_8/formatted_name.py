@@ -1,4 +1,6 @@
-"""summary"""
+"""Demonstrate three variations of a name-formatting function: with
+two required arguments, with three required arguments (including a
+middle name), and with an optional middle name argument."""
 
 
 def get_formatted_name(first_name, last_name):

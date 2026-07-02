@@ -1,4 +1,5 @@
-"""Summary"""
+"""Build a personal profile dictionary using build_profile()'s
+**user_info to collect an arbitrary number of keyword arguments."""
 
 
 def build_profile(first, last, **user_info):

@@ -1,4 +1,6 @@
-"""summary"""
+"""Module defining make_pizza(), which accepts a required size and
+an arbitrary number of toppings (*toppings) and prints a summary of
+the pizza being made. Meant to be imported by making_pizzas.py."""
 
 
 # def make_pizza(*toppings):

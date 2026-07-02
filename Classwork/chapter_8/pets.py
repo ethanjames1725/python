@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrate positional and keyword arguments, plus a default
+parameter value, by describing a pet's type and name."""
 
 
 def describe_pet(pet_name, animal_type='dog'):

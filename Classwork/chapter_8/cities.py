@@ -1,4 +1,5 @@
-"""Summary"""
+"""Demonstrate a default parameter value by describing a city's
+country, defaulting to South Africa unless another country is given."""
 
 
 def describe_city(

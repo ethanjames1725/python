@@ -1,4 +1,7 @@
-"""Summary"""
+"""Demonstrate the different ways to import and call make_pizza()
+from the pizza module: import pizza, import specific functions,
+import with an alias, and import everything with *. All examples
+are commented out here to show the syntax without running them."""
 # import pizza
 
 # pizza.make_pizza(16, 'pepperoni')

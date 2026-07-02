@@ -1,4 +1,6 @@
-"""summary"""
+"""Demonstrate that a function can permanently modify a list passed
+to it: send_messages() pops each message off the original messages
+list and appends it to sent_messages, emptying the original."""
 
 
 def show_messages(text_messages):

@@ -1,4 +1,6 @@
-"""summary"""
+"""Demonstrate functions that return values by building dictionaries
+of information about a person, with build_person_0() showing how an
+optional age argument can be conditionally added to the result."""
 
 
 def build_person(first_name, last_name):

@@ -1,4 +1,5 @@
-"""summary: passing a list"""
+"""Demonstrate passing a list to a function by greeting every
+username in a list of names."""
 
 
 def greet_users(names):

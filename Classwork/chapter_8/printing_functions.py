@@ -1,4 +1,7 @@
-"""Summary"""
+"""Module defining print_models() and show_completed_models(), which
+together simulate a 3D printing queue: designs are moved one by one
+from an unprinted list to a completed list. Meant to be imported by
+printing_models.py."""
 
 
 def print_models(unpr_designs, compl_models):

@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrate default parameter values by calling make_shirt() with
+no arguments, a keyword size override, and both size and text overridden."""
 
 
 def make_shirt(size='large', text='I love Python'):

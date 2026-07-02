@@ -1,4 +1,5 @@
-"""summary"""
+"""Demonstrate calling a function with both positional and keyword
+arguments to print a t-shirt's size and printed message."""
 
 
 def make_shirt(size, text):

@@ -1,4 +1,5 @@
-"""summary"""
+"""Prompt the user for a favourite book title and print a sentence
+announcing it, demonstrating a function that takes one argument."""
 
 
 def favourite_book(title):

@@ -1,4 +1,6 @@
-"""summary"""
+"""Demonstrate an optional parameter by building album dictionaries
+with make_album(), then prompt the user in a loop to enter their own
+artist names and album titles until they type 'q'."""
 
 
 def make_album(

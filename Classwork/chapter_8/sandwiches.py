@@ -1,4 +1,6 @@
-"""Summary"""
+"""Demonstrate collecting an arbitrary number of positional arguments
+with *items, including unpacking an existing list of fillings into
+the function call with the * operator."""
 
 
 def make_sandwich(*items):

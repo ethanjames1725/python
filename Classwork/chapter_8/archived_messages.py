@@ -1,4 +1,6 @@
-"""summary"""
+"""Demonstrate preventing a function from modifying the original
+list by passing a copy (messages[:]) to send_messages(), so the
+original messages list is left unchanged after sending."""
 
 
 def show_messages(text_messages):
