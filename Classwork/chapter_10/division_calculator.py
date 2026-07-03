@@ -1,4 +1,8 @@
-"""Summary"""
+"""Repeatedly prompt the user for two numbers and divide them.
+
+Guards against division by zero with a try/except block and exits
+the loop when the user enters 'q' for either number.
+"""
 print("Enter two numbers to divide them.")
 print("Enter 'q' to quit.")
 

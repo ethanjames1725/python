@@ -1,4 +1,8 @@
-"""Summary"""
+"""Check whether a birthday appears in the first million digits of pi.
+
+Reads pi_million_digits.txt, prompts the user for a birthday in
+ddmmyy form, and reports whether and where it appears.
+"""
 from pathlib import Path
 
 path = Path(__file__).parent / 'pi_million_digits.txt'

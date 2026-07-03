@@ -1,4 +1,7 @@
-"""Summary"""
+"""Print the approximate word count of several text files.
+
+Skips any file in the list that cannot be found.
+"""
 from pathlib import Path
 
 

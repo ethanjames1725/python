@@ -1,4 +1,4 @@
-"""Summary"""
+"""Write a short multi-line message to programming.txt."""
 from pathlib import Path
 
 contents = "I love programming.\n"

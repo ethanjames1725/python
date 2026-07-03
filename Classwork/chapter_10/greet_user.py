@@ -1,4 +1,4 @@
-"""Summary"""
+"""Load a stored username from username.json and greet that user."""
 from pathlib import Path
 import json
 

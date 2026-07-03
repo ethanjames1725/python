@@ -1,4 +1,8 @@
-"""Summary"""
+"""Repeatedly prompt the user for two numbers and print their sum.
+
+Handles non-numeric input with a try/except block and exits the
+loop when the user enters 'q' for either number.
+"""
 
 while True:
     try:

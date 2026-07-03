@@ -1,4 +1,8 @@
-"""Summary"""
+"""Store and recall the user's favourite number using a JSON file.
+
+Greets the user with their previously stored number if one exists;
+otherwise prompts for a number and saves it to favourite_number.json.
+"""
 from pathlib import Path
 import json
 

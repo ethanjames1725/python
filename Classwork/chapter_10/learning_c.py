@@ -1,4 +1,8 @@
-"""Summary"""
+"""Print a message and replace 'Python' with 'C' in a text file.
+
+Also demonstrates that str.replace() does not modify a string in
+place, since strings are immutable in Python.
+"""
 from pathlib import Path
 
 MESSAGE = "I really like dogs."

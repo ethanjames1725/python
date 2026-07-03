@@ -1,4 +1,4 @@
-"""Summary"""
+"""Prompt the user for their name and save it to guest.txt."""
 from pathlib import Path
 
 guest_info = input("Please enter your name. ")

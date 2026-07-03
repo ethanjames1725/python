@@ -1,4 +1,4 @@
-"""Summary"""
+"""Write a hard-coded list of numbers to numbers.json."""
 from pathlib import Path
 import json
 

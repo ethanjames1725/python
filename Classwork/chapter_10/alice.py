@@ -1,4 +1,7 @@
-"""Summary"""
+"""Read alice.txt and report its approximate word count.
+
+Prints an error message instead if the file cannot be found.
+"""
 from pathlib import Path
 
 path = Path(__file__).parent/'alice.txt'

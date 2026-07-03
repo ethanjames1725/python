@@ -1,4 +1,4 @@
-"""Summary"""
+"""Read a list of numbers from numbers.json and print it."""
 from pathlib import Path
 import json
 

@@ -1,4 +1,7 @@
-"""Summary"""
+"""Read and print the contents of cats.txt and dogs.txt.
+
+Silently does nothing if either file is missing.
+"""
 from pathlib import Path
 
 try:

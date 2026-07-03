@@ -1,4 +1,4 @@
-"""Summary"""
+"""Read pi_million_digits.txt and print its first 10 digits and length."""
 from pathlib import Path
 
 path = Path(__file__).parent / 'pi_million_digits.txt'

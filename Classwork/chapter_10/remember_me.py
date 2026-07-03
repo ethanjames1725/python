@@ -1,4 +1,9 @@
-"""Summary"""
+"""Store and recall a user's profile information using a JSON file.
+
+Greets a returning user after confirming their stored username, or
+prompts for a new username, name, and age and saves them to
+username.json otherwise.
+"""
 from pathlib import Path
 import json
 

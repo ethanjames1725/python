@@ -1,4 +1,8 @@
-"""Summary"""
+"""Repeatedly prompt for visitor names and log them to guest_book.txt.
+
+Appends each entered name to the guest book until the user enters
+'q' to quit.
+"""
 from pathlib import Path
 
 path = Path(__file__).parent/'guest_book.txt'
