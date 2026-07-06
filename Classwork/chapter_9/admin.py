@@ -25,6 +25,7 @@ class Privileges:
     """Stores and displays a list of admin privileges."""
 
     def __init__(self):
+        """Initialises the list of privileges."""
         self.privileges = ['can add post', 'can delete post', 'can ban user']
 
     def show_privileges(self):
