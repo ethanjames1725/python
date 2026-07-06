@@ -1,4 +1,4 @@
-"""Summary"""
+"""Tests for the city_country function, with and without population."""
 from city_functions import city_country
 
 

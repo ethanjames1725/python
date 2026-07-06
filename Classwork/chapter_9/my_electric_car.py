@@ -1,4 +1,4 @@
-"""Summary"""
+"""Creates an ElectricCar instance and prints its battery details."""
 from electric_car import ElectricCar
 
 my_leaf = ElectricCar('nissan', 'leaf', 2024)

@@ -1,8 +1,8 @@
-"""Summary"""
+"""A simple User class demonstrating creation of multiple instances."""
 
 
 class User:
-    """Summary"""
+    """Represents a user with basic profile information."""
 
     def __init__(self, f_name, l_name, age, username):
         """Initialises attributes."""

@@ -1,4 +1,4 @@
-"""Summary"""
+"""Provides a function that formats first, last, and optional middle names."""
 
 
 def get_formatted_name(first, last, middle=''):

@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Simulates a lottery draw and repeatedly guesses until the ticket is matched.
+"""
 from random import choice
 
 lottery_numbers = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '0',

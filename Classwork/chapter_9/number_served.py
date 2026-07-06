@@ -1,8 +1,10 @@
-"""Summary"""
+"""A Restaurant class that tracks the number of customers served."""
 
 
 class Restaurant:
-    """Summary"""
+    """
+    Represents a restaurant with a name, cuisine type, and customer count.
+    """
 
     def __init__(self, restaurant_name, cuisine_type):
         """Stores name and cuisine"""

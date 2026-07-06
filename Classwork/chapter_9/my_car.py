@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Creates a Car instance and demonstrates reading and updating its odometer.
+"""
 from car import Car
 
 my_new_car = Car('audi', 'a4', 2024)

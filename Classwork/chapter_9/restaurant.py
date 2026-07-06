@@ -1,8 +1,8 @@
-"""Summary"""
+"""A simple Restaurant class demonstrating basic object creation."""
 
 
 class Restaurant:
-    """Summary"""
+    """Represents a restaurant with a name and cuisine type."""
 
     def __init__(self, restaurant_name, cuisine_type):
         """Stores name and cuisine"""

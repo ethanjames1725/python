@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Provides a function that formats a city, country, and optional population.
+"""
 
 
 def city_country(city, country, population=''):

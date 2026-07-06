@@ -1,8 +1,8 @@
-"""Summary"""
+"""Demonstrates class inheritance by extending User with admin privileges."""
 
 
 class User:
-    """Summary"""
+    """Represents a user with basic profile information."""
 
     def __init__(self, f_name, l_name, age, username):
         """Initialises attributes."""
@@ -22,7 +22,7 @@ class User:
 
 
 class Privileges:
-    """Summary"""
+    """Stores and displays a list of admin privileges."""
 
     def __init__(self):
         self.privileges = ['can add post', 'can delete post', 'can ban user']
@@ -35,10 +35,15 @@ class Privileges:
 
 
 class Admin(User):
-    """Summary"""
+    """
+    A user with administrative privileges, composed of a Privileges instance.
+    """
 
     def __init__(self, f_name, l_name, age, username):
-        """Summary"""
+        """
+        Initialise the parent User attributes
+        and attach a Privileges instance.
+        """
         super().__init__(f_name, l_name, age, username)
         self.privileges = Privileges()
 

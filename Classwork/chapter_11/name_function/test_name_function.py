@@ -1,4 +1,4 @@
-"""Summary"""
+"""Tests for get_formatted_name with and without a middle name."""
 from name_function import get_formatted_name
 
 

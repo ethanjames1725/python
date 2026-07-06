@@ -1,4 +1,4 @@
-"""Summary"""
+"""A simple class that models a dog and demonstrates creating instances."""
 
 
 class Dog:

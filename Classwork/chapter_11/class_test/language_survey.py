@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Runs an AnonymousSurvey asking what language people first learned to speak.
+"""
 from survey import AnonymousSurvey
 
 # Define a question, and make a survey.

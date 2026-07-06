@@ -1,9 +1,9 @@
-"""Summary"""
+"""A class that simulates rolling dice with a configurable number of sides."""
 from random import randint
 
 
 class Dice:
-    """Summary"""
+    """Represents a die that can be rolled to produce random numbers."""
 
     def __init__(self, sides=6):
         """Initialises Dice attributes."""

@@ -1,4 +1,4 @@
-"""Summary"""
+"""An Employee class that models an employee's name, salary, and raises."""
 
 
 class Employee:

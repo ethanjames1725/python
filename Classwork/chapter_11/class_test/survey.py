@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+An AnonymousSurvey class for collecting and displaying anonymous responses.
+"""
 
 
 class AnonymousSurvey:

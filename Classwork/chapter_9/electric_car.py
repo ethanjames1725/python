@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Extends Car with Battery and ElectricCar classes to model electric vehicles.
+"""
 
 
 class Car:
@@ -58,7 +60,7 @@ class Battery:
               "kilometres on a full charge.")
 
     def upgrade_battery(self):
-        """Summary"""
+        """Upgrade the battery to a larger 65-kWh capacity."""
         if self.battery_size != 65:
             self.battery_size = 65
 

@@ -1,8 +1,10 @@
-"""Summary"""
+"""
+Demonstrates inheritance by extending Restaurant with an IceCreamStand class.
+"""
 
 
 class Restaurant:
-    """Summary"""
+    """Represents a restaurant with a name and cuisine type."""
 
     def __init__(self, restaurant_name, cuisine_type):
         """Stores name and cuisine"""
@@ -19,10 +21,13 @@ class Restaurant:
 
 
 class IceCreamStand(Restaurant):
-    """Summary"""
+    """A restaurant that specialises in serving ice cream flavours."""
 
     def __init__(self, restaurant_name, cuisine_type):
-        """Summary"""
+        """
+        Initialise the parent Restaurant attributes
+        and set available flavours.
+        """
         super().__init__(restaurant_name, cuisine_type)
         self.flavours = ['vanilla', 'chocolate', 'strawberry']
 

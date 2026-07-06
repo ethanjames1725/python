@@ -1,4 +1,4 @@
-"""Summary"""
+"""Tests for the Employee class's default and custom raise amounts."""
 import pytest
 from employee import Employee
 

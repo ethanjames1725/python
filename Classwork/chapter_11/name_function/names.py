@@ -1,4 +1,4 @@
-"""Summary"""
+"""Repeatedly prompts for first and last names and prints them formatted."""
 from name_function import get_formatted_name
 
 print("Enter 'q' at any time to quit.")

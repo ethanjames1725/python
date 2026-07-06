@@ -1,4 +1,4 @@
-"""Summary"""
+"""Tests for the AnonymousSurvey class using a shared pytest fixture."""
 import pytest
 from survey import AnonymousSurvey
 

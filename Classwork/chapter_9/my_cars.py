@@ -1,4 +1,6 @@
-"""Summary"""
+"""
+Imports the electric_car module and creates Car and ElectricCar instances.
+"""
 # from electric_car import Car, ElectricCar
 
 # my_mustang = Car('ford', 'mustang', 2024)
