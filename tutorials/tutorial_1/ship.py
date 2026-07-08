@@ -1,6 +1,7 @@
 """Manages most of the behaviour of the player's ship."""
 import pygame
 from pygame.sprite import Sprite
+from pathlib import Path
 
 
 class Ship(Sprite):
@@ -14,7 +15,8 @@ class Ship(Sprite):
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load('tutorials/tutorial_1/images/ship.bmp')
+        image_path = Path(__file__).parent/'images'/'ship.bmp'
+        self.image = pygame.image.load(image_path)
         self.rect = self.image.get_rect()
 
         # Start each new ship at the bottom centre of the screen.
