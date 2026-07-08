@@ -1,4 +1,4 @@
-"""Empty Pygame window launcher."""
+"""Main class that runs the Alien Invasion game."""
 import sys
 from time import sleep
 
@@ -41,8 +41,10 @@ class AlienInvasion:
         # Start Alien Invasion in an inactive state.
         self.game_active = False
 
-        # Make the Play button.
-        self.play_button = Button(self, "Play")
+        # Makes three difficulty buttons.
+        self.easy_button = Button(self, "Easy", -100)
+        self.medium_button = Button(self, "Medium")
+        self.hard_button = Button(self, "Hard", 100)
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -68,30 +70,42 @@ class AlienInvasion:
                 self._check_keyup_events(event)
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                self._check_play_button(mouse_pos)
+                self._check_difficulty_buttons(mouse_pos)
 
-    def _check_play_button(self, mouse_pos):
-        """Start a new game when the player clicks Play."""
-        button_clicked = self.play_button.rect.collidepoint(mouse_pos)
-        if button_clicked and not self.game_active:
-            # Reset the game settings.
-            self.settings.initialise_dynamic_settings()
-            self.stats.reset_stats()
-            self.sb.prep_score()
-            self.sb.prep_level()
-            self.sb.prep_ships()
-            self.game_active = True
+    def _check_difficulty_buttons(self, mouse_pos):
+        """Start a new game at the chosen difficulty."""
+        if self.game_active:
+            return
 
-            # Get rid of any remaining bullets and aliens.
-            self.bullets.empty()
-            self.aliens.empty()
+        if self.easy_button.rect.collidepoint(mouse_pos):
+            self.settings.set_easy()
+            self._start_game()
+        elif self.medium_button.rect.collidepoint(mouse_pos):
+            self.settings.set_medium()
+            self._start_game()
+        elif self.hard_button.rect.collidepoint(mouse_pos):
+            self.settings.set_hard()
+            self._start_game()
 
-            # Create a new fleet and center the ship.
-            self._create_fleet()
-            self.ship.centre_ship()
+    def _start_game(self):
+        """Reset game state and start a new game."""
+        # Reset the game settings.
+        self.stats.reset_stats()
+        self.sb.prep_score()
+        self.sb.prep_level()
+        self.sb.prep_ships()
+        self.game_active = True
 
-            # Hide the mouse cursor.
-            pygame.mouse.set_visible(False)
+        # Get rid of any remaining bullets and aliens.
+        self.bullets.empty()
+        self.aliens.empty()
+
+        # Create a new fleet and center the ship.
+        self._create_fleet()
+        self.ship.centre_ship()
+
+        # Hide the mouse cursor.
+        pygame.mouse.set_visible(False)
 
     def _check_keydown_events(self, event):
         """Respond to keypresses."""
@@ -103,6 +117,8 @@ class AlienInvasion:
             sys.exit()
         elif event.key == pygame.K_SPACE:
             self._fire_bullet()
+        elif event.key == pygame.K_p and not self.game_active:
+            self._start_game()
 
     def _check_keyup_events(self, event):
         """Respond to key releases."""
@@ -119,7 +135,7 @@ class AlienInvasion:
 
     def _create_fleet(self):
         """Create the fleet of aliens."""
-        # Create an alien and keep addings aliens until there's no room left.
+        # Create an alien and keep adding aliens until there's no room left.
         # Spacing between aliens is one alien width and one alien height.
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
@@ -242,7 +258,9 @@ class AlienInvasion:
 
         # Draw the play button if the game is inactive.
         if not self.game_active:
-            self.play_button.draw_button()
+            self.easy_button.draw_button()
+            self.medium_button.draw_button()
+            self.hard_button.draw_button()
 
         pygame.display.flip()
 

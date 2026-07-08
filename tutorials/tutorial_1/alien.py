@@ -1,4 +1,4 @@
-"""Summary"""
+"""Manages a single alien in the fleet."""
 import pygame
 from pygame.sprite import Sprite
 
