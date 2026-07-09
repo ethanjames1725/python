@@ -26,7 +26,10 @@ class GameStats:
         if self.high_score_file.exists():
             contents = self.high_score_file.read_text()
             if contents:
-                return json.loads(contents)
+                try:
+                    return json.loads(contents)
+                except json.JSONDecodeError:
+                    return 0
         return 0
 
     def save_high_score(self):
