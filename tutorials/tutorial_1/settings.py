@@ -11,9 +11,15 @@ class Settings:
         self.bg_colour = (135, 206, 235)
 
         # Bullet settings
-        self.bullet_width = 3
+        self.bullet_width = 4
         self.bullet_height = 15
         self.bullet_colour = (255, 60, 60)
+
+        # Boost settings
+        self.boost_mult = 2.0
+        self.boost_max_fuel = 100
+        self.boost_drain_rate = 2
+        self.boost_regen_rate = 2
 
         # How quickly the game speeds up
         self.speedup_scale = 1.1
@@ -26,7 +32,7 @@ class Settings:
     def initialise_dynamic_settings(self):
         """Initialise settings that change throughout the game."""
         self.ship_speed = 2.0
-        self.bullet_speed = 3.0
+        self.bullet_speed = 5.0
         self.alien_speed = 1.0
         self.fleet_drop_speed = 10
         self.bullets_allowed = 3

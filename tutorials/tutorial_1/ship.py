@@ -28,14 +28,26 @@ class Ship(Sprite):
         # Movement flag; start with a ship that's not moving.
         self.moving_right = False
         self.moving_left = False
+        self.boosting = False
+        self.boost_fuel = self.settings.boost_max_fuel
 
     def update(self):
         """Update the ship's position based on the movement flag."""
+        speed = self.settings.ship_speed
+        if self.boosting and self.boost_fuel > 0:
+            speed *= self.settings.boost_mult
+            self.boost_fuel -= self.settings.boost_drain_rate
+        else:
+            self.boost_fuel += self.settings.boost_regen_rate
+
+        self.boost_fuel = max(0, min(self.settings.boost_max_fuel,
+                                     self.boost_fuel))
+
         # Update the ship's x value, not the rect.
         if self.moving_right and self.rect.right < self.screen_rect.right:
-            self.x += self.settings.ship_speed
+            self.x += speed
         if self.moving_left and self.rect.left > 0:
-            self.x -= self.settings.ship_speed
+            self.x -= speed
 
         # Update rect object from self.x
         self.rect.x = self.x
@@ -48,3 +60,18 @@ class Ship(Sprite):
         """Centre the ship on the screen."""
         self.rect.midbottom = self.screen_rect.midbottom
         self.x = float(self.rect.x)
+
+    def draw_boost_bar(self):
+        """Draw a bar showing current boost fuel."""
+        fuel_ratio = self.boost_fuel / self.settings.boost_max_fuel
+        bar_width, bar_height = 200, 20
+        bar_x = 20
+        bar_y = self.screen_rect.bottom - bar_height - 20
+
+        bg_rect = pygame.Rect(bar_x, bar_y, bar_width, bar_height)
+        fill_rect = pygame.Rect(
+            bar_x, bar_y, bar_width * fuel_ratio, bar_height)
+
+        pygame.draw.rect(self.screen, (60, 60, 60), bg_rect)
+        pygame.draw.rect(self.screen, (0, 200, 255), fill_rect)
+        pygame.draw.rect(self.screen, (255, 255, 255), bg_rect, 2)
