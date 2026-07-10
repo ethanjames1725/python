@@ -44,6 +44,18 @@ class Settings:
         # Scoring settings
         self.alien_points = 50
 
+        # Alien firing settings
+        self.alien_fire_chance = 0.0006 # prob per alien per frame
+        self.alien_bullet_speed = 2.0
+        self.alien_bullets_allowed = 5
+
+        # Shield settings
+        self.shield_max_durability = 7
+        self.shield_recharge_rate = 0.001 # dura regained per frame
+        self.shield_recharge_boost = 0.01 # bonus dura per alien killed
+        self.shield_hit_cd_ms = 1500 # pause regen after any hit
+        self.shield_break_cd_ms = 4000 # longer pause after fully breaking
+
     def set_easy(self):
         """Set difficulty attributes for easy mode."""
         self.initialise_dynamic_settings()
@@ -52,6 +64,10 @@ class Settings:
         self.fleet_drop_speed = 5
         self.bullets_allowed = 5
         self.ship_limit = 4
+        self.alien_fire_chance = 0.0003
+        self.alien_bullets_allowed = 3
+        self.shield_max_durability = 10
+        self.shield_recharge_rate = 0.002
 
     def set_medium(self):
         """Set difficulty attributes for medium mode."""
@@ -65,11 +81,16 @@ class Settings:
         self.fleet_drop_speed = 15
         self.bullets_allowed = 2
         self.ship_limit = 2
+        self.alien_fire_chance = 0.0012
+        self.alien_bullets_allowed = 8
+        self.shield_max_durability = 5
+        self.shield_recharge_rate = 0.001
 
     def increase_speed(self):
         """Increase speed settings and alien point value."""
         self.ship_speed *= self.speedup_scale
         self.bullet_speed *= self.speedup_scale
         self.alien_speed *= self.speedup_scale
+        self.alien_fire_chance *= self.speedup_scale
 
         self.alien_points = int(self.alien_points * self.score_scale)
