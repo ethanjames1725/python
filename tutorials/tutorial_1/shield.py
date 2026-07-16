@@ -1,4 +1,4 @@
-"""Manages the ship's shield."""
+"""Manages the ship's shield behaviour."""
 import pygame
 from pygame.sprite import Sprite
 
