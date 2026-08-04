@@ -27,6 +27,10 @@ class Settings:
         # How quickly the alien point values increase
         self.score_scale = 1.5
 
+        # Audio settings (0.0 to 1.0), controlled via the pause menu.
+        self.music_volume = 0.5
+        self.sfx_volume = 0.5
+
         self.initialise_dynamic_settings()
 
     def initialise_dynamic_settings(self):

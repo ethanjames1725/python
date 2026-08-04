@@ -10,6 +10,7 @@ from settings import Settings
 from game_stats import GameStats
 from scoreboard import Scoreboard
 from button import Button
+from pause_menu import PauseMenu
 from ship import Ship
 from shield import Shield
 from bullet import Bullet
@@ -41,12 +42,21 @@ class AlienInvasion:
         # Load sound effects
         self.shoot_sound = self._load_sound('shoot.wav')
         self.explosion_sound = self._load_sound('alien_hit.wav')
-        if self.explosion_sound:
-            self.explosion_sound.set_volume(0.2)
         self.ship_hit_sound = self._load_sound('ship_hit.wav')
         self.game_startup_sound = self._load_sound('game_startup.wav')
         self.game_over_sound = self._load_sound('game_over.wav')
         self.level_up_sound = self._load_sound('level_up.wav')
+
+        # Base (pre-scale) volume for each sound effect.
+        self._sfx_base_volume = {
+            'shoot_sound': 1.0,
+            'explosion_sound': 0.2,
+            'ship_hit_sound': 1.0,
+            'game_startup_sound': 1.0,
+            'game_over_sound': 1.0,
+            'level_up_sound': 1.0,
+        }
+        self.apply_sfx_volume()
 
         # Load background music
         self.music_path = Path(__file__).parent/'sounds'/'game_music.wav'
@@ -71,11 +81,15 @@ class AlienInvasion:
 
         # Start Alien Invasion in an inactive state.
         self.game_active = False
+        self.paused = False
 
-        # Makes three difficulty buttons.
+        # Makes three difficulty buttons and an exit button.
         self.easy_button = Button(self, "Easy", -100)
         self.medium_button = Button(self, "Medium")
         self.hard_button = Button(self, "Hard", 100)
+        self.exit_button = Button(self, "Exit", 200)
+
+        self.pause_menu = PauseMenu(self)
 
         # Remember the last difficulty chosen, so 'P' can replay it.
         self.last_difficulty = self.settings.set_medium
@@ -93,12 +107,19 @@ class AlienInvasion:
         except (FileNotFoundError, pygame.error):
             return None
 
+    def apply_sfx_volume(self):
+        """Scale every sound effect by the current sfx volume setting."""
+        for attr_name, base_volume in self._sfx_base_volume.items():
+            sound = getattr(self, attr_name)
+            if sound:
+                sound.set_volume(base_volume * self.settings.sfx_volume)
+
     def run_game(self):
         """Start the main loop for the game."""
         while True:
             self._check_events()
 
-            if self.game_active:
+            if self.game_active and not self.paused:
                 self.ship.update()
                 self._update_bullets()
                 self._update_aliens()
@@ -120,15 +141,35 @@ class AlienInvasion:
                 self._check_keyup_events(event)
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                self._check_difficulty_buttons(mouse_pos)
+                if self.paused:
+                    self.pause_menu.check_click(mouse_pos)
+                else:
+                    self._check_difficulty_buttons(mouse_pos)
 
     def _exit_game(self):
         """Save the high score and quit."""
         self.stats.save_high_score()
         sys.exit()
 
+    def _toggle_pause(self):
+        """Pause or resume the game, showing/hiding the pause menu."""
+        self.paused = not self.paused
+        if self.paused:
+            pygame.mixer.music.pause()
+            pygame.mouse.set_visible(True)
+        else:
+            pygame.mixer.music.unpause()
+            pygame.mouse.set_visible(False)
+
+    def _return_to_main_menu(self):
+        """Leave the current game and return to the difficulty menu."""
+        self.game_active = False
+        self.paused = False
+        pygame.mixer.music.stop()
+        pygame.mouse.set_visible(True)
+
     def _check_difficulty_buttons(self, mouse_pos):
-        """Start a new game at the chosen difficulty."""
+        """Start a new game at the chosen difficulty, or exit."""
         if self.game_active:
             return
 
@@ -144,6 +185,8 @@ class AlienInvasion:
             self.last_difficulty = self.settings.set_hard
             self.last_difficulty()
             self._start_game()
+        elif self.exit_button.rect.collidepoint(mouse_pos):
+            self._exit_game()
 
     def _start_game(self):
         """Reset game state and start a new game."""
@@ -151,6 +194,7 @@ class AlienInvasion:
         self.stats.reset_stats()
         self.sb.prep_images()
         self.game_active = True
+        self.paused = False
 
         # Get rid of shield and any remaining bullets and aliens.
         self.bullets.empty()
@@ -168,6 +212,7 @@ class AlienInvasion:
         # Start background music, looping indefinitely.
         if self.music_path.exists():
             pygame.mixer.music.load(self.music_path)
+            pygame.mixer.music.set_volume(self.settings.music_volume)
             pygame.mixer.music.play(loops=-1)
 
     def _check_keydown_events(self, event):
@@ -186,8 +231,8 @@ class AlienInvasion:
             self.last_difficulty()
             self._start_game()
         elif event.key == pygame.K_ESCAPE:
-            self.game_active = False
-            pygame.mouse.set_visible(True)
+            if self.game_active:
+                self._toggle_pause()
 
     def _check_keyup_events(self, event):
         """Respond to key releases."""
@@ -397,6 +442,10 @@ class AlienInvasion:
             self.easy_button.draw_button()
             self.medium_button.draw_button()
             self.hard_button.draw_button()
+            self.exit_button.draw_button()
+
+        if self.paused:
+            self.pause_menu.draw()
 
         pygame.display.flip()
 
